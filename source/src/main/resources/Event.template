@@ -1,0 +1,11 @@
+package [basepackage].[SchemaName].entity.event;
+
+/**
+ * this Listener class is auto generated for [SchemaName].[TableName] by codegenerator tool (v1.0).
+ * Please do not rename this file name manually.
+ */
+
+public class [TableName]Listener{
+
+}
+[NewLine]

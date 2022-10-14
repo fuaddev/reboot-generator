@@ -1,0 +1,52 @@
+package [basepackage].[SchemaName].entity;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.UUID;
+import java.util.List;
+import java.util.Set;
+import java.math.BigDecimal;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Lob;
+import javax.persistence.Version;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
+import javax.persistence.EntityListeners;
+import [basepackage].[SchemaName].entity.event.[TableName]Listener;
+
+/**
+ * this class is auto generated for [SchemaName].[TableName] by RebootGenerator tool (v1.0).
+ * Please do not change this file manually.
+ */
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "[TableName]",  schema = "[SchemaName]")
+public class [TableName]Entity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+    [ColumnList]
+}
