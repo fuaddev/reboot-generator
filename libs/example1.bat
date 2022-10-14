@@ -5,4 +5,4 @@ if /i "%arg1%" == "" (
 	set arg1=dbo
 	)
 
-java -jar RebootGenerator-1.0.jar --url=jdbc:sqlserver://localhost\SQLEXPRESS;databaseName=Zentro --user-name=fuad --password=123 --schema-name=%arg1% --base-package=net.sinam.bxm table-name=%arg2% --output-dir=entities
+java -jar RebootGenerator-1.0.jar --url=jdbc:sqlserver://localhost\SQLEXPRESS;databaseName=TestDB --user-name=fuad --password=pass123 --schema-name=%arg1% --base-package=net.sinam.bxm table-name=%arg2% --output-dir=entities
